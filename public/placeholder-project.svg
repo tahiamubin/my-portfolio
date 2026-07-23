@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#151A28"/>
+  <rect x="300" y="155" width="200" height="140" rx="12" stroke="#2A2F42" stroke-width="2"/>
+  <circle cx="360" cy="195" r="16" stroke="#6C5CE7" stroke-width="2"/>
+  <path d="M300 275 L380 215 L430 245 L500 185 L500 295 L300 295 Z" fill="#1E2436" stroke="#2A2F42" stroke-width="2"/>
+  <text x="400" y="340" text-anchor="middle" fill="#9CA3AF" font-family="Arial, sans-serif" font-size="18">Project Image</text>
+</svg>
