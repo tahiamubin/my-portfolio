@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { Download, Sparkles, Code, Award } from "lucide-react";
+import { Download, Sparkles, Code } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -22,12 +21,12 @@ export default function Hero() {
             key={i}
             className="absolute h-1 w-1 rounded-full bg-[#6C5CE7]/20"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: `${Math.random() * 100}%`,
+              y: `${Math.random() * 100}%`,
             }}
             animate={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: `${Math.random() * 100}%`,
+              y: `${Math.random() * 100}%`,
               opacity: [0.2, 0.5, 0.2],
             }}
             transition={{
