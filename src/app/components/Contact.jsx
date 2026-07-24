@@ -12,8 +12,8 @@ const CONTACT_METHODS = [
   },
   {
     label: "Phone",
-    value: "Add your number here",
-    href: "tel:+8800000000000",
+    value: "+8801715549583",
+    href: "tel:01715549583",
     icon: Phone,
   },
   // WhatsApp — uncomment and add your number when ready:
