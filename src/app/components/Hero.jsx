@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0B0F19] px-6 pt-28 pb-16"
+      className="relative min-h-screen  items-center justify-center overflow-hidden bg-[#0B0F19] px-6 pt-28 pb-16 "
     >
       {/* Ambient glow accents */}
       <div className="pointer-events-none absolute -top-32 right-0 h-96 w-96 rounded-full bg-[#6C5CE7]/20 blur-[120px]" />
@@ -41,20 +41,21 @@ export default function Hero() {
 
       <div className="relative mx-auto w-full max-w-6xl">
         {/* Flex layout: image + text */}
-        <div className="flex flex-col-reverse items-center gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
+        <div className="flex flex-col items-center gap-12 lg:items-center lg:justify-center">
           {/* Text content */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left"
+            className="flex flex-1 flex-col items-center text-center"
           >
             {/* Designation eyebrow with sparkle */}
             <motion.span
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center gap-2 rounded-full border border-[#2A2F42] bg-[#151A28]/80 backdrop-blur-sm px-5 py-2 text-sm font-medium text-[#8B7FF0]"
+              className="inline-flex items-center gap-2 rounded-full border  
+              border-[#2A2F42] bg-[#151A28]/80 backdrop-blur-sm px-5 py-2 text-sm font-medium text-[#8B7FF0]"
             >
               <Sparkles size={14} className="text-[#6C5CE7]" />
               MERN Stack Developer
@@ -108,7 +109,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start"
+              className="mt-10 flex flex-wrap items-center justify-center gap-4"
             >
               <motion.a
                 href="/resume.pdf"
@@ -140,7 +141,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="mt-16 flex flex-col items-center gap-2 lg:items-start"
+              className="mt-16 flex flex-col items-center gap-2"
             >
               <span className="text-xs text-[#9CA3AF]">Scroll to explore</span>
               <motion.div
@@ -163,26 +164,6 @@ export default function Hero() {
                 />
               </motion.div>
             </motion.div>
-          </motion.div>
-
-          {/* Profile picture */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.1, duration: 0.5 }}
-            className="relative h-56 w-56 shrink-0 sm:h-72 sm:w-72 lg:h-96 lg:w-96"
-          >
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#6C5CE7] to-[#8B7FF0] blur-2xl opacity-50" />
-            <div className="relative h-full w-full overflow-hidden rounded-full border-2 border-[#2A2F42] bg-[#151A28]">
-              <Image
-                src="/picture.png"
-                alt="Tahia Mubin"
-                fill
-                sizes="(max-width: 1024px) 288px, 384px"
-                className="object-cover scale-125"
-                priority
-              />
-            </div>
           </motion.div>
         </div>
       </div>
